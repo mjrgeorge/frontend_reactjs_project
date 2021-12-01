@@ -1,11 +1,8 @@
-# dependencies
 /node_modules
 /.vscode
 /.eslintrc
 /.eslintcache
-
-# testing
+/.env
 /coverage
-
-# production
 /build
+/dist

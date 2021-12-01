@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-import DemoReducers from './service_student_user/reducers/DemoReducers';
+import HeaderReducer from './common/reducer/HeaderReducer';
+import DashboardReducer from './service_student_user/reducer/DashboardReducer';
 
 const RootReducer = combineReducers({
-    DemoReducers,
+    HeaderReducer,
+    DashboardReducer,
 });
 export default RootReducer;
