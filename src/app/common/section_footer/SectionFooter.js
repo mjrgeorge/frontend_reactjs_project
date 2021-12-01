@@ -6,8 +6,8 @@ import Copyright from './Copyright';
 const SectionFooter = function () {
     return (
         <Box>
-            <Typography variant="h1" color="tomato">
-                This is a footer section! It is testing purpose use only!
+            <Typography paragraph align="center">
+                Footer section!
             </Typography>
             <Copyright />
         </Box>

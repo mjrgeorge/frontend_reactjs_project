@@ -1,19 +1,21 @@
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './common/page_not_found/PageNotFound';
-import About from './service_student_user/page_dashboard/testing/About';
-import Contact from './service_student_user/page_dashboard/testing/Contact';
-import Home from './service_student_user/page_dashboard/testing/Home';
+import SectionFooter from './common/section_footer/SectionFooter';
+import SectionHeader from './common/section_header/SectionHeader';
+import PageDashboard from './service_student_user/page_dashboard/PageDashboard';
 
 const App = function () {
     return (
         <div>
+            {/* STUDENT USER HEADER */}
+            <SectionHeader />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<PageDashboard />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
+            {/* STUDENT USER FOOTER */}
+            <SectionFooter />
         </div>
     );
 };

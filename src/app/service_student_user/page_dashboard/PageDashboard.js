@@ -14,12 +14,12 @@ const PageDashboard = function () {
     return (
         <Box sx={{ display: 'flex' }}>
             <Box>{matches ? <DashboardLeftDrawer /> : <DashboardLeftDrawerMobile />}</Box>
-            <Box sx={{ pl: 2, pr: 2, width: '100%' }}>
-                <DashboardMainBody matches={matches} />
+            <Box component="main" sx={{ flexGrow: 1 }}>
+                <Box sx={{ pl: 2, pr: 2, width: '100%' }}>
+                    <DashboardMainBody matches={matches} />
+                </Box>
             </Box>
-            <Box>
-                <Box>{matches && <Advertisement />}</Box>
-            </Box>
+            <Box>{matches && <Advertisement />}</Box>
         </Box>
     );
 };
